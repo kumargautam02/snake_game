@@ -4,4 +4,6 @@ jobs:
         runs-on: windows-latest
         steps:
           - run: pip list
+          - run: ls
+          - run: ls -ltr
           - run: python test.py
