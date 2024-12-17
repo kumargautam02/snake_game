@@ -8,4 +8,5 @@ jobs:
           - run: pip list
           - run: ls
           - run: ls -ltr
+          - run: pip install -r requirements.txt
           - run: python testing.py
