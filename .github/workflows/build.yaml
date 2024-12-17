@@ -3,7 +3,9 @@ jobs:
     first-job:
         runs-on: ubuntu-latest
         steps:
+        # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+          - uses: actions/checkout@v3
           - run: pip list
           - run: ls
           - run: ls -ltr
-          - run: python test.py
+          - run: python .github/workflows/test.py
