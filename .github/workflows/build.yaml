@@ -4,5 +4,4 @@ jobs:
         runs-on: windows-latest
         steps:
           - run: pip list
-          - run: pip install -r ./requirements.txt
           - run: python smtp_mail.py
