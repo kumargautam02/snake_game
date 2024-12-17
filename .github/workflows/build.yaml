@@ -4,4 +4,4 @@ jobs:
         runs-on: windows-latest
         steps:
           - run: pip list
-          - run: python smtp_mail.py
+          - run: python test.py
