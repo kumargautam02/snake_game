@@ -23,3 +23,15 @@ jobs:
         - run: pip install -r requirements.txt
 #        - run: python smtp_mail.py
         - run: python new123.py
+
+job:
+    first-job:
+        runs-on: ubuntu-latest
+        steps:
+        # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+          - uses: actions/checkout@v3
+          - run: pip list
+          - run: ls
+          - run: ls -ltr
+          - run: pip install -r requirements.txt
+          - run: python new123.py
